@@ -1,0 +1,26 @@
+linters-settings:
+  goimports:
+    local-prefixes: gitlab.com/digeon-inc/golhub/server
+
+linters:
+  enable:
+    - govet
+    - errcheck
+    - staticcheck
+    - unused
+    - gosimple
+    - structcheck
+    - varcheck
+    - ineffassign
+    - deadcode
+    - typecheck
+    - gosec
+    - prealloc
+    - testpackage
+    - tparallel
+    - exportloopref
+    - thelper
+    - paralleltest
+    - gocognit
+    - goimports
+    - gofmt

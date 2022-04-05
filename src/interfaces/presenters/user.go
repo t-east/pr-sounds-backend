@@ -28,7 +28,7 @@ func (u *User) Render(user *entities.User, statusCode int) {
 	}
 	u.w.WriteHeader(statusCode)
 	u.w.Header().Set("Content-Type", "application/json")
-	u.w.Write(res)
+	_, _ = u.w.Write(res)
 }
 
 func (u *User) RenderError(err error, code int) {

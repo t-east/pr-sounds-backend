@@ -9,8 +9,8 @@ import (
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 
-	"github.com/t-east/pr-sounds-backend/src/interfaces/controllers"
 	"github.com/t-east/pr-sounds-backend/src/domains/entities"
+	"github.com/t-east/pr-sounds-backend/src/interfaces/controllers"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -28,7 +28,10 @@ func LoadTestDB() (*gorm.DB, error) {
 	if err != nil {
 		return nil, err
 	}
-	db.AutoMigrate(&entities.User{})
+	err = db.AutoMigrate(&entities.User{})
+	if err != nil {
+		return nil, err
+	}
 	return db, nil
 }
 
@@ -40,7 +43,10 @@ func ServerHandlerPublic(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Fatalf("Can't get DB. %+v", err)
 	}
-	allowOptionsMiddleware(w, r)
+	err = allowOptionsMiddleware(w, r)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 	var head string
 	_, r.URL.Path = core.ShiftPath(r.URL.Path)
 	head, r.URL.Path = core.ShiftPath(r.URL.Path)

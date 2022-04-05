@@ -1,4 +1,4 @@
-package http
+package http_tests
 
 import (
 	"github.com/t-east/pr-sounds-backend/src/domains/entities"
@@ -13,6 +13,9 @@ func LoadTestDB() (*gorm.DB, error) {
 	if err != nil {
 		return nil, err
 	}
-	db.AutoMigrate(&entities.User{})
+	err = db.AutoMigrate(&entities.User{})
+	if err != nil {
+		return nil, err
+	}
 	return db, nil
 }

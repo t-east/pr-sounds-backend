@@ -41,7 +41,7 @@ func (uc *UserController) Post(w http.ResponseWriter, r *http.Request) {
 	outputPort := presenters.NewUserOutputPort(w)
 	repository := gateways.NewUserRepository(uc.Conn)
 	inputPort := interactor.NewUserInputPort(outputPort, repository)
-	inputPort.Create(user)
+	_, _ = inputPort.Create(user)
 }
 
 func (uc *UserController) Get(w http.ResponseWriter, r *http.Request) {
@@ -51,7 +51,7 @@ func (uc *UserController) Get(w http.ResponseWriter, r *http.Request) {
 	outputPort := presenters.NewUserOutputPort(w)
 	repository := gateways.NewUserRepository(uc.Conn)
 	inputPort := interactor.NewUserInputPort(outputPort, repository)
-	inputPort.FindByID(id)
+	_, _ = inputPort.FindByID(id)
 }
 
 func (uc *UserController) Dispatch(w http.ResponseWriter, r *http.Request) {
