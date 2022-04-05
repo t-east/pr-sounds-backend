@@ -1,0 +1,3 @@
+src/.env
+
+src/tests/http_test/test.db
