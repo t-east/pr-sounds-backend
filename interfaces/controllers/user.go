@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/t-east/pr-sounds-backend/src/core"
-	"github.com/t-east/pr-sounds-backend/src/domains/entities"
-	"github.com/t-east/pr-sounds-backend/src/interfaces/gateways"
-	"github.com/t-east/pr-sounds-backend/src/interfaces/presenters"
-	"github.com/t-east/pr-sounds-backend/src/usecases/interactor"
-	"github.com/t-east/pr-sounds-backend/src/usecases/port"
+	"github.com/t-east/pr-sounds-backend/core"
+	"github.com/t-east/pr-sounds-backend/domains/entities"
+	"github.com/t-east/pr-sounds-backend/interfaces/gateways"
+	"github.com/t-east/pr-sounds-backend/interfaces/presenters"
+	"github.com/t-east/pr-sounds-backend/usecases/interactor"
+	"github.com/t-east/pr-sounds-backend/usecases/port"
 
 	"gorm.io/gorm"
 )

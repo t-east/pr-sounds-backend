@@ -3,9 +3,9 @@ package interactor
 import (
 	"log"
 
-	"github.com/t-east/pr-sounds-backend/src/core"
-	entities "github.com/t-east/pr-sounds-backend/src/domains/entities"
-	port "github.com/t-east/pr-sounds-backend/src/usecases/port"
+	"github.com/t-east/pr-sounds-backend/core"
+	entities "github.com/t-east/pr-sounds-backend/domains/entities"
+	port "github.com/t-east/pr-sounds-backend/usecases/port"
 )
 
 type UserHandler struct {

@@ -3,8 +3,8 @@ package interfaces_test
 import (
 	"testing"
 
-	"github.com/t-east/pr-sounds-backend/src/domains/entities"
-	"github.com/t-east/pr-sounds-backend/src/mocks"
+	"github.com/t-east/pr-sounds-backend/domains/entities"
+	"github.com/t-east/pr-sounds-backend/mocks"
 )
 
 // コンテンツ情報永続化モックのテスト

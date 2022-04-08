@@ -8,11 +8,11 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/t-east/pr-sounds-backend/src/asserts"
-	"github.com/t-east/pr-sounds-backend/src/core"
-	"github.com/t-east/pr-sounds-backend/src/domains/entities"
-	"github.com/t-east/pr-sounds-backend/src/interfaces/controllers"
-	"github.com/t-east/pr-sounds-backend/src/interfaces/gateways"
+	"github.com/t-east/pr-sounds-backend/asserts"
+	"github.com/t-east/pr-sounds-backend/core"
+	"github.com/t-east/pr-sounds-backend/domains/entities"
+	"github.com/t-east/pr-sounds-backend/interfaces/controllers"
+	"github.com/t-east/pr-sounds-backend/interfaces/gateways"
 )
 
 // UserName, EmailのあるユーザをPOST -> 201を返すかをテスト

@@ -1,7 +1,7 @@
 package http_tests
 
 import (
-	"github.com/t-east/pr-sounds-backend/src/domains/entities"
+	"github.com/t-east/pr-sounds-backend/domains/entities"
 
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"

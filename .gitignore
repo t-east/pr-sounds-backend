@@ -1,4 +1,5 @@
-src/.env
+.env
 
-src/tests/http_test/test.db
-src/.DS_Store
+./tests/http_test/test.db
+./usecases/.DS_Store
+./intefaces/.DS_Store

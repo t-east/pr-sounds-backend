@@ -1,7 +1,7 @@
 package port
 
 import (
-	entities "github.com/t-east/pr-sounds-backend/src/domains/entities"
+	entities "github.com/t-east/pr-sounds-backend/domains/entities"
 )
 
 type UserInputPort interface {

@@ -1,8 +1,8 @@
 package mocks
 
 import (
-	entities "github.com/t-east/pr-sounds-backend/src/domains/entities"
-	"github.com/t-east/pr-sounds-backend/src/usecases/port"
+	entities "github.com/t-east/pr-sounds-backend/domains/entities"
+	"github.com/t-east/pr-sounds-backend/usecases/port"
 )
 
 type UserControllerMock struct {

@@ -1,7 +1,5 @@
-ENV_DEV_FILE := env.dev
+ENV_DEV_FILE := env
 ENV_DEV = $(shell cat $(ENV_DEV_FILE))
-ENV_TEST_FILE := env.test
-ENV_TEST = $(shell cat $(ENV_TEST_FILE))
 
 # App Server
 .PHONY: run-dev

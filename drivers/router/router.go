@@ -5,12 +5,12 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/t-east/pr-sounds-backend/src/core"
+	"github.com/t-east/pr-sounds-backend/core"
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 
-	"github.com/t-east/pr-sounds-backend/src/domains/entities"
-	"github.com/t-east/pr-sounds-backend/src/interfaces/controllers"
+	"github.com/t-east/pr-sounds-backend/domains/entities"
+	"github.com/t-east/pr-sounds-backend/interfaces/controllers"
 
 	_ "github.com/go-sql-driver/mysql"
 )

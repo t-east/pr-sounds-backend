@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	router "github.com/t-east/pr-sounds-backend/src/drivers/router"
+	router "github.com/t-east/pr-sounds-backend/drivers/router"
 
 	"github.com/joho/godotenv"
 )

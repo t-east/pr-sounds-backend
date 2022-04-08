@@ -3,10 +3,10 @@ package usecases_test
 import (
 	"testing"
 
-	"github.com/t-east/pr-sounds-backend/src/asserts"
-	"github.com/t-east/pr-sounds-backend/src/domains/entities"
-	"github.com/t-east/pr-sounds-backend/src/mocks"
-	"github.com/t-east/pr-sounds-backend/src/usecases/interactor"
+	"github.com/t-east/pr-sounds-backend/asserts"
+	"github.com/t-east/pr-sounds-backend/domains/entities"
+	"github.com/t-east/pr-sounds-backend/mocks"
+	"github.com/t-east/pr-sounds-backend/usecases/interactor"
 )
 
 func TestUserCreate(t *testing.T) {
