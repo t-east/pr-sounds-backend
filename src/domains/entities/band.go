@@ -1,9 +1,14 @@
 package entities
 
 import (
+	"errors"
 	"time"
 
 	"gorm.io/gorm"
+)
+
+var (
+	ErrTooLongBandName = errors.New("too long name")
 )
 
 type Band struct {
@@ -17,4 +22,11 @@ type Band struct {
 	CreatedAt time.Time      `json:"-"`
 	UpdatedAt time.Time      `json:"-"`
 	DeletedAt gorm.DeletedAt `json:"-"`
+}
+
+func (b *Band) ValidateName() error {
+	if len(b.Name) > 256 {
+		return ErrTooLongBandName
+	}
+	return nil
 }
