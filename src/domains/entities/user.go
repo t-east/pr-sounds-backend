@@ -17,6 +17,7 @@ var (
 	ErrTooLongEmail      = errors.New("email is too long")
 	ErrEmailAlreadyExist = errors.New("this email already exists")
 	ErrTooLongUserName   = errors.New("name is too long")
+	ErrTooShortPassword  = errors.New("too short password")
 )
 
 type User struct {
@@ -57,6 +58,12 @@ func (u *User) ValidateEmail() error {
 	if !emailRegexp.MatchString(u.Email) {
 		return ErrInvalidEmail
 	}
+	return nil
+}
 
+func (u *User) ValidatePassword() error {
+	if len(u.Password) < 8 {
+		return ErrTooShortPassword
+	}
 	return nil
 }
