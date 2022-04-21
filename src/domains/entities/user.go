@@ -16,7 +16,7 @@ var (
 	ErrIncorrectPassword = errors.New("incorrect password")
 	ErrTooLongEmail      = errors.New("email is too long")
 	ErrEmailAlreadyExist = errors.New("this email already exists")
-	ErrTooLongUserName       = errors.New("name is too long")
+	ErrTooLongUserName   = errors.New("name is too long")
 )
 
 type User struct {
@@ -29,8 +29,6 @@ type User struct {
 	IsActive       bool           `gorm:"default:false;not null" json:"-"`
 	IsSuperUser    bool           `gorm:"default:false;not null" json:"-"`
 	GroupID        uint           `json:"group_id"`
-	Group          Group          `json:"group"`
-	Band           Band           `json:"band"`
 	CreatedAt      time.Time      `json:"-"`
 	UpdatedAt      time.Time      `json:"-"`
 	DeletedAt      gorm.DeletedAt `json:"-"`

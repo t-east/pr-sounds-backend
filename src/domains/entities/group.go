@@ -30,7 +30,6 @@ type Group struct {
 	ID        uint           `json:"id"`
 	Name      GroupName      `gorm:"size:256;unique;not null" json:"name"`
 	Memo      string         `gorm:"size:1024" json:"memo"`
-	Tasks []Task
 	CreatedAt time.Time      `json:"-"`
 	UpdatedAt time.Time      `json:"-"`
 	DeletedAt gorm.DeletedAt `json:"-"`

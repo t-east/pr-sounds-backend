@@ -10,7 +10,7 @@ import (
 var (
 	ErrTooLongTaskName = errors.New("too long name")
 	ErrTooLongTaskMemo = errors.New("too long memo")
-	ErrDuplicateAff = errors.New("duplicate affiliations")
+	ErrDuplicateAff    = errors.New("duplicate affiliations")
 )
 
 type Task struct {

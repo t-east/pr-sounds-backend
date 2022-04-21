@@ -1,3 +1,5 @@
 src/.env
 
 src/tests/http_test/test.db
+
+src/.DS_Store
